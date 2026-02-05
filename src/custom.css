@@ -1,5 +1,4 @@
 .hero-sm {
-    background-image: url('../assets/herobg.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -16,12 +15,10 @@
 }
 
 .heroSection {
-    background-image: url('../assets/herobg.png');
     background-size: 60%;
     background-position: center;
-    background-attachment: scroll; /* Creates parallax effect */
+    background-attachment: scroll;
     background-clip: border-box;
-    /* background-blend-mode:blur; */
     background-repeat: no-repeat;
 }
 

@@ -17,12 +17,12 @@ export default function HeroSection() {
         
         {/* Hero content area with background image */}
         <div className="heroSection hero-sm bg-transparent-blue  w-full h-full max-sm:h-[100vh] flex-1 relative flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-cover bg-no-repeat"
-          // style={{
-          //   backgroundImage: `url(${heroImage})`,
-          //   backgroundSize: '100',
-          //   backgroundPosition: 'center',
-          //   backgroundAttachment: 'fixed' // Creates parallax effect
-          // }}
+          style={{
+            backgroundImage: `url(${heroImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed'
+          }}
         >
           {/* Text content area - contains heading, subtitle, and buttons */}
           <div className="bg-transparent-blue max-sm:sm-button max-sm:gap-4 relative z-10 text-center max-w-5xl mx-auto w-full h-full mt-[0] flex flex-col justify-center items-center py-5 sm:py-12 lg:py-10 px-4">
