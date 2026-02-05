@@ -16,18 +16,18 @@ export default function HeroSection() {
         <Navbar />
         
         {/* Hero content area with background image */}
-        <div className="heroSection hero-sm bg-transparent-blue  w-full h-full max-sm:h-[100vh] flex-1 relative flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-cover bg-no-repeat"
+        <div className="heroSection hero-sm bg-transparent-blue  w-full h-full max-sm:h-[100vh] flex-1 relative flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-cover bg-no-repeat items-center justify-center"
           style={{
             backgroundImage: `url(${heroImage})`,
-            backgroundSize: 'cover',
+            backgroundSize: '60%',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
           }}
         >
           {/* Text content area - contains heading, subtitle, and buttons */}
-          <div className="bg-transparent-blue max-sm:sm-button max-sm:gap-4 relative z-10 text-center max-w-5xl mx-auto w-full h-full mt-[0] flex flex-col justify-center items-center py-5 sm:py-12 lg:py-10 px-4">
+          <div className="bg-transparent-blue max-sm:sm-button max-sm:gap-4 relative z-10 text-center max-w-5xl mx-auto w-full h-full mt-[10] flex flex-col justify-center items-center py-5 sm:py-12 lg:py-10 px-4">
             {/* Main heading - artist name */}
-            <h1 className="monstra max-sm:!text-[60px] text-3xl mb-3 sm:mb-8 leading-none font-montserrat items-center justify-center max-sm:w-[90vw]" >
+            <h1 className="flex monstra max-sm:!text-[60px] text-3xl mb-3 sm:mb-8 leading-none font-montserrat items-center justify-center max-sm:w-[90vw] mt-3" >
               HONEYBEE<br />AVILLA
             </h1>
             
@@ -59,9 +59,15 @@ export default function HeroSection() {
         </div>
         {/* ABOUT Section */}
       </div>
+      
       <div id="about" className="flex w-[100vw] h-auto text-white flex items-center justify-center">
         <About />
       </div>
+
+      <div id="about" className="flex w-[100vw] h-auto text-white flex items-center justify-center">
+        <About />
+      </div>
+
     </>
   )
 }

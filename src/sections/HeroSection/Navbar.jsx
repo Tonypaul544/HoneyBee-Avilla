@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     // Navigation bar - stays at top when scrolling
-    <nav className="min-h-[50px] fixed top-0 left-0 right-0 z-50 items-center justify-center bg-semitransparent-blue backdrop-blur-md border-b border-gray-700/30 top-0 z-50">
+    <nav className="min-h-[50px] fixed top-0 left-0 right-0 z-50 items-center justify-center bg-semitransparent-blue backdrop-blur-md border-b border-gray-700/30 top-0 z-50 border-b-2 border-solid-white-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fixed h-[100%] w-[100%]">
         <div className="flex items-center justify-between h-full w-[95%] mx-auto m-auto items-center">
           
