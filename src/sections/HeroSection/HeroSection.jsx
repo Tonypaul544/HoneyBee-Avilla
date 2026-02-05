@@ -1,6 +1,6 @@
 // Import the Navbar component and the hero background image
 import Navbar from './Navbar'
-import heroImage from '../../assets/herobg.png'
+import heroImage from '../../images/herobg.png'
 import '../../custom.css'
 import About from './About'
 

@@ -1,6 +1,6 @@
 // Import useState hook for managing mobile menu state
 import { useState } from 'react'
-import Logo from '../../assets/hblogo.png'
+import Logo from '../../images/hblogo.png'
 import '../../custom.css'
 
 // Navbar Component - Navigation bar for the website
