@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import heroImage from '../../images/herobg.png'
 import '../../custom.css'
 import About from './About'
+import Sounds from '../../Sound'
 
 // IMPORT FONTS FROM FONTAWSOME
 import { MdOutlinePlayCircle } from "react-icons/md";
@@ -38,7 +39,7 @@ export default function HeroSection() {
             
             {/* Description text - about the artist */}
             <p className="text-lg sm:text-xl text-gray-300 mb-1 sm:mb-16 max-w-2xl mx-auto leading-tight font-light">
-              UK-based Nigerian Afrobeats artist delivering high-energy<br />performances and global sound.
+              UK-based Nigerian Afrobeats/R&B artist delivering high-energy<br />performances and global sound.
             </p>
             
             {/* Action buttons - Listen Now and Book for Shows */}
@@ -59,13 +60,13 @@ export default function HeroSection() {
         </div>
         {/* ABOUT Section */}
       </div>
-      
+
       <div id="about" className="flex w-[100vw] h-auto text-white flex items-center justify-center">
         <About />
       </div>
 
       <div id="about" className="flex w-[100vw] h-auto text-white flex items-center justify-center">
-        <About />
+        <Sounds />
       </div>
 
     </>

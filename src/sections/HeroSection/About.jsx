@@ -1,6 +1,4 @@
 
-// import HeroSection from './sections/HeroSection/HeroSection'
-
 export default function About() {
   return (
     <div>
@@ -11,7 +9,7 @@ export default function About() {
         
         <div className="flex max-sm:flex-col flex-row gap-10 mt-10 px-5 max-sm:px-2 justify-center items-center w-[100%] h-auto m-auto items-center justify-center">
 
-          <div className="flex flex-col gap-15 p-5 rounded-lg w-[50%] h-100 max-sm:w-full h-100 items-center justify-center bg-[#042875] box-shadow-white">
+          <div className="flex flex-col gap-15 p-5 rounded-lg w-[50%] h-100 max-sm:w-full h-100 items-center justify-center bg-[#042875] box-shadow-white ">
             <p className="flex">HoneyBee Chimaoke Ukattahon Vincent, born on 16th April 1994 in Abia State, Nigeria, is a UK-based Afrobeats singer known for electrifying stage performances and infectious rhythms.</p>
 
             <p className="flex">He began music and stage performance in 2012 while studying at Michael Okpara University of Agriculture, Nigeria. Blending African roots with global influence, HoneyBee's sound is designed to move crowds, connect cultures, and dominate the stage.</p>
