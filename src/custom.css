@@ -1,5 +1,5 @@
 .hero-sm {
-    background-image: url('../../honeybee/src/assets/herobg.png');
+    background-image: url('/assets/herobg.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -16,7 +16,7 @@
 }
 
 .heroSection {
-    background-image: url('../../honeybee/src/assets/herobg.png');
+    background-image: url('/assets/herobg.png');
     background-size: 60%;
     background-position: center;
     background-attachment: scroll; /* Creates parallax effect */
