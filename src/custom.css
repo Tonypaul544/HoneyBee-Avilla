@@ -1,0 +1,56 @@
+.hero-sm {
+    background-image: url('../../honeybee/src/assets/herobg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+}
+
+.sm-button {
+    width: 100%;
+}
+
+.small-text {
+    font-size: 3.5rem;
+}
+
+.heroSection {
+    background-image: url('../../honeybee/src/assets/herobg.png');
+    background-size: 60%;
+    background-position: center;
+    background-attachment: scroll; /* Creates parallax effect */
+    background-clip: border-box;
+    /* background-blend-mode:blur; */
+    background-repeat: no-repeat;
+}
+
+.bg-transparent-blue{
+    width: 100%;
+    background-color: rgba(10, 14, 23, 0.7);
+}
+
+.monstra {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-semitransparent-blue {
+    background-color: rgba(17, 23, 37, 0.244);
+}
+
+/* .custom-size {
+    font-size: 2em;
+    font-weight: 700;
+} */
+
+.mobile-button {
+    width: 300px;
+}
+
+.box-shadow-blue {
+    box-shadow: 0 0 9px -1px rgb(11, 11, 169);
+}
+
+.box-shadow-white {
+    box-shadow: 0 0 2px -1px rgb(255, 255, 255);
+}
