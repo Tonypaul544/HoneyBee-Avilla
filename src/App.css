@@ -3,3 +3,8 @@
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
 }
+
+
+.bg-transparent {
+    background-color: transparent;
+}

@@ -10,11 +10,11 @@ import { FaRegPlayCircle } from "react-icons/fa";
 
 // import HeroSection from './sections/HeroSection/HeroSection'
 
-export default function Sounds() {
+export default function Music() {
   return (
     <div>
       {/* About The Artist */}
-      <div className="flex bg-[#0b1221] flex-col w-[100vw] h-auto items-center justify-center py-10 pt-[5em] items-center justify-center">
+      <div className="flex bg-transparent flex-col w-[100vw] h-auto items-center justify-center py-10 pt-[5em] items-center justify-center">
 
         <h1 className="flex max-sm:m-auto max-sm:text-5xl  max-sm:text-[22px] text-6xl font-bold text-[#fff] text-center mb-5">Sound of the Stage Banger</h1>
         <p className="flex mt-5 text-center  max-sm:w-[90%]">Experience the electrifying beats and infectious rhythms that move crowds worldwide</p>

@@ -4,7 +4,7 @@ import Gallery from '../../Gallery'
 import heroImage from '../../images/herobg.png'
 import '../../custom.css'
 import About from './About'
-import Sounds from '../../Sound'
+import Music from '../../Sound'
 
 // IMPORT FONTS FROM FONTAWSOME
 import { MdOutlinePlayCircle } from "react-icons/md";
@@ -66,8 +66,8 @@ export default function HeroSection() {
         <About />
       </div>
 
-      <div id="about" className="flex w-[100vw] h-auto text-white flex items-center justify-center">
-        <Sounds />
+      <div id="music" className="flex w-[100vw] h-auto text-white flex items-center justify-center">
+        <Music />
       </div>
 
       <div id="gallery" className="flex w-[100vw] h-auto text-white flex items-center justify-center my-10">

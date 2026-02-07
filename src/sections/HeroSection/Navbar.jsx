@@ -25,7 +25,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu - Only shows on medium screens and above */}
-          <div className="w-content flex hidden md:flex items-center gap-5 m-auto align-center justify-center mr-0">
+          <div className="w-content max-sm:w-full  max-sm:h-auto max-sm:bg-gray-800 flex max-sm:bg-gray-800 hidden md:flex items-center gap-5 m-auto align-center justify-center mr-0">
             <a href="#about" className="text-gray-300 hover:text-white transition text-sm font-semibold">About</a>
             <a href="#contact" className="text-gray-300 hover:text-white transition text-sm font-semibold">Contact</a>
             <a href="#music" className="text-gray-300 hover:text-white transition text-sm font-semibold">Music</a>
@@ -33,7 +33,7 @@ export default function Navbar() {
 
             {/* Book Now Button - Only shows on medium screens and above */}
             <div className="hidden md:block">
-                <button className="px-4.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full transition duration-300 text-[12px]">
+                <button className="px-4.5 py-1.5 bg-gray-600 hover:bg-blue-700 text-white font-semibold rounded-full transition duration-300 text-[12px]">
                 Book Now
                 </button>
             </div>

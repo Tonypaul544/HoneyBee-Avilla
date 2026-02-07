@@ -55,3 +55,7 @@
 .text-shadow-white {
     text-shadow: 0 0 5px rgb(16, 25, 25);
 }
+
+.bg-transparent {
+    background-color: transparent;
+}
