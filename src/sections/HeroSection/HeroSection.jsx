@@ -1,5 +1,6 @@
 // Import the Navbar component and the hero background image
 import Navbar from './Navbar'
+import Gallery from '../../Gallery'
 import heroImage from '../../images/herobg.png'
 import '../../custom.css'
 import About from './About'
@@ -28,12 +29,12 @@ export default function HeroSection() {
           {/* Text content area - contains heading, subtitle, and buttons */}
           <div className="bg-transparent-blue max-sm:sm-button max-sm:gap-4 relative z-10 text-center max-w-5xl mx-auto w-full h-full mt-[10] flex flex-col justify-center items-center py-5 sm:py-12 lg:py-10 px-4">
             {/* Main heading - artist name */}
-            <h1 className="flex monstra max-sm:!text-[60px] text-3xl mb-3 sm:mb-8 leading-none font-montserrat items-center justify-center max-sm:w-[90vw] mt-3" >
+            <h1 className="flex monstra max-sm:!text-[60px] text-3xl mb-3 sm:mb-8 leading-none font-montserrat items-center justify-center max-sm:w-[90vw] mt-3 text-shadow-white" >
               HONEYBEE<br />AVILLA
             </h1>
             
             {/* Subtitle - artist tagline */}
-            <p className=" max-sm:mt-0 text-2xl sm:text-xl font-semibold text-blue-400 mb-8 sm:mb-10">
+            <p className=" max-sm:mt-0 mt-0 mr-0 text-2xl sm:text-xl font-bold text-[#fff] text-shadow-white mb-5 sm:mb-10">
               The Stage Banger
             </p>
             
@@ -45,14 +46,14 @@ export default function HeroSection() {
             {/* Action buttons - Listen Now and Book for Shows */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-3 mt-6 max-sm:mt-[20%]">
               {/* Listen Now button - blue background */}
-              <button className="flex max-sm:w-[90vw] max-sm:w-100 max-sm:h-15 justify-center bg-blue-600 hover:bg-blue-800 text-white font-sm rounded-full px-5 py-1.5 items-center gap-2 transition duration-300 text-lg whitespace-nowrap max-sm:text-[25px] max-sm:mobile-button w-[220px]">
-                <MdOutlinePlayCircle className="inline mr-2" />
+              <button className="flex max-sm:w-[90vw] max-sm:w-100 max-sm:h-15 justify-center bg-gray-600 hover:bg-gray-500 text-white font-sm rounded-full px-5 py-1.5 items-center gap-1 transition duration-300 text-lg whitespace-nowrap max-sm:text-[25px] max-sm:mobile-button w-[220px]">
+                <MdOutlinePlayCircle className="inline mr-1" />
                 <p>Listen Now</p>
               </button>
               
               {/* Book for Shows button - white border, filled on hover */}
-              <button className="max-sm:w-100 max-sm:w-[90vw] flex bg-transparent border-[1.5px] border-blue-600 hover:bg-white hover:text-[#0a0e17] text-white font-sm rounded-full px-5 py-1.5  max-sm:text-[23px] justify-center gap-2 items-center max-sm:h-15 transition duration-300 text-lg whitespace-nowrap w-[220px]">
-                <MdOutlinePlayCircle className="inline mr-2 max-sm:text-[26px]" />
+              <button className="max-sm:w-100 max-sm:w-[90vw] flex bg-transparent border-[1.5px] border-gray-700 border-[1.5] hover:bg-gray-600 text-white font-sm rounded-full px-5 py-1.5  max-sm:text-[23px] justify-center gap-2 items-center max-sm:h-15 transition duration-300 text-lg whitespace-nowrap w-[220px]">
+                <MdOutlinePlayCircle className="inline mr-1 max-sm:text-[26px]" />
                 <p>Book for Shows</p>
               </button>
             </div>
@@ -67,6 +68,10 @@ export default function HeroSection() {
 
       <div id="about" className="flex w-[100vw] h-auto text-white flex items-center justify-center">
         <Sounds />
+      </div>
+
+      <div id="gallery" className="flex w-[100vw] h-auto text-white flex items-center justify-center my-10">
+        <Gallery />
       </div>
 
     </>

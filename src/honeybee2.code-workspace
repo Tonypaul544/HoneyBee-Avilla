@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "honeybee",
+			"path": ".."
+		},
+		{
+			"name": "src",
+			"path": "../../../honeybee-avilla/honeybeeavilla/src"
+		}
+	],
+	"settings": {}
+}
