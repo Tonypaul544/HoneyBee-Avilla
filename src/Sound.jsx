@@ -4,6 +4,7 @@ import { FaSoundcloud, FaSpotify } from "react-icons/fa";
 import { SiMusicbrainz } from "react-icons/si";
 import { AiFillTikTok } from "react-icons/ai";
 import { FaRegPlayCircle } from "react-icons/fa";
+import { useInView } from './hooks/useInView'
 
 
 // import Sportiy from '../../assets/images/Sportify.png'
@@ -11,40 +12,48 @@ import { FaRegPlayCircle } from "react-icons/fa";
 // import HeroSection from './sections/HeroSection/HeroSection'
 
 export default function Music() {
+  const [titleRef, titleInView] = useInView()
+  const [platformsRef, platformsInView] = useInView()
+  const [latestRef, latestInView] = useInView()
+
   return (
     <div>
       {/* About The Artist */}
       <div className="flex bg-transparent flex-col w-[100vw] h-auto items-center justify-center py-10 pt-[5em] items-center justify-center">
 
-        <h1 className="flex max-sm:m-auto max-sm:text-5xl  max-sm:text-[22px] text-6xl font-bold text-[#fff] text-center mb-5">Sound of the Stage Banger</h1>
-        <p className="flex mt-5 text-center  max-sm:w-[90%]">Experience the electrifying beats and infectious rhythms that move crowds worldwide</p>
+        <h1 ref={titleRef} className={`flex max-sm:m-auto max-sm:text-5xl max-sm:text-[22px] text-6xl font-bold text-[#fff] text-center mb-5 ${titleInView ? 'animate-slide-down' : 'opacity-0'}`}>Sound of the Stage Banger</h1>
+        <p className={`flex mt-5 text-center max-sm:w-[90%] ${titleInView ? 'animate-fade' : 'opacity-0'}`}
+          style={{ animationDelay: '0.2s' }}>Experience the electrifying beats and infectious rhythms that move crowds worldwide</p>
         
-        <div className="flex max-sm:flex-col flex-row gap-10 mt-10 px-5 max-sm:px-2 justify-center items-center w-[100%] h-[90%] m-auto items-center justify-center">
+        <div ref={platformsRef} className={`flex max-sm:flex-col flex-row gap-10 mt-10 px-5 max-sm:px-2 justify-center items-center w-[100%] h-[90%] m-auto items-center justify-center`}>
 
-          <a href="https://audiomack.com/honeybee-avilla-" className="flex flex-col items-center w-[20%] h-[150px] max-sm:w-[90%] items-center justify-center bg-[#0b1221] box-shadow-white p-5 rounded-lg gap-5 hover:bg-gray-700 transition duration-300 ease-in-out">
+          <a href="https://audiomack.com/honeybee-avilla-" className={`flex flex-col items-center w-[20%] h-[150px] max-sm:w-[90%] items-center justify-center bg-[#0b1221] box-shadow-white p-5 rounded-lg gap-5 hover:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-105 ${platformsInView ? 'animate-box-1' : 'opacity-0'}`}>
             <SiAudiomack className="w-[40px] h-[40px] bg-[#000000] p-1 rounded-lg"  />
             <h1 className="flex text-md font-bold">Audiomack</h1>
           </a>
 
-          <a href="https://open.spotify.com/user/vzo08dfa5vhen2wj46j3eb83z?si=XIsFzpKXR-myFnPP-MrVGw" className="flex flex-col items-center w-[20%] h-[150px] max-sm:w-[90%] items-center justify-center bg-[#0b1221] box-shadow-white p-5 rounded-lg gap-5 hover:bg-gray-700 transition duration-300 ease-in-out">
+          <a href="https://open.spotify.com/user/vzo08dfa5vhen2wj46j3eb83z?si=XIsFzpKXR-myFnPP-MrVGw" className={`flex flex-col items-center w-[20%] h-[150px] max-sm:w-[90%] items-center justify-center bg-[#0b1221] box-shadow-white p-5 rounded-lg gap-5 hover:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-105 ${platformsInView ? 'animate-box-2' : 'opacity-0'}`}
+            style={{ animationDelay: '0.1s' }}>
             <FaSpotify className="w-[40px] h-[40px] text-green-500" />
             {/* <img src={Sportiy} alt="Sportify Logo" className="w-[40px] h-[40px]" /> */}
             <h1 className="flex text-md font-bold border-rounded-lg">Sportify</h1>
           </a>
 
-          <a href="https://on.soundcloud.com/Hf1COoAyLvsPiwVyjj" className="flex flex-col items-center w-[20%] h-[150px] max-sm:w-[90%] items-center justify-center bg-[#0b1221] box-shadow-white p-5 rounded-lg gap-5 hover:bg-gray-700 transition duration-300 ease-in-out">
+          <a href="https://on.soundcloud.com/Hf1COoAyLvsPiwVyjj" className={`flex flex-col items-center w-[20%] h-[150px] max-sm:w-[90%] items-center justify-center bg-[#0b1221] box-shadow-white p-5 rounded-lg gap-5 hover:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-105 ${platformsInView ? 'animate-box-1' : 'opacity-0'}`}
+            style={{ animationDelay: '0.2s' }}>
             <FaSoundcloud className="w-[40px] h-[40px] text-red-500"  />
             <h1 className="flex text-md font-bold">SoundCloud</h1>
           </a>
 
-           <a href="https://www.tiktok.com/@vincentukattah?_r=1&_t=ZN-93fvgmIQ4Ri" className="flex flex-col items-center max-sm:w-[10px] w-[20%] h-[150px] max-sm:w-[90%] items-center justify-center bg-[#0b1221] box-shadow-white p-5 rounded-lg gap-5 hover:bg-gray-700 transition duration-300 ease-in-out">
+           <a href="https://www.tiktok.com/@vincentukattah?_r=1&_t=ZN-93fvgmIQ4Ri" className={`flex flex-col items-center max-sm:w-[10px] w-[20%] h-[150px] max-sm:w-[90%] items-center justify-center bg-[#0b1221] box-shadow-white p-5 rounded-lg gap-5 hover:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-105 ${platformsInView ? 'animate-box-2' : 'opacity-0'}`}
+            style={{ animationDelay: '0.3s' }}>
             <AiFillTikTok  className="w-[40px] h-[40px]"  />
             <h1 className="flex text-md font-bold">Ticktok</h1>
           </a>
         </div>
       </div>
       
-      <div className="flex max-sm:py-5 max-sm:flex-col max-sm:justify-center max-sm:bg-gray-800 bg-[#0b1221] border border-gray-700 border-[1.5px] rounded-[15px] w-[87%] m-auto h-full items-center justify-start p-2 items-center justify-center max-sm:gap-5 gap-10 my-10">
+      <div ref={latestRef} className={`flex max-sm:py-5 max-sm:flex-col max-sm:justify-center max-sm:bg-gray-800 bg-[#0b1221] border border-gray-700 border-[1.5px] rounded-[15px] w-[87%] m-auto h-full items-center justify-start p-2 items-center justify-center max-sm:gap-5 gap-10 my-10 ${latestInView ? 'animate-slide-up' : 'opacity-0'}`}>
         <SiMusicbrainz  className="flex max-sm:w-full max-sm:h-20 text-3xl font-bolder w-[20%] h-[200px] bg-gray-800 p-2 rounded-lg" />
 
         <div className="flex max-sm:justify-center flex-col gap-5 justify-between max-sm:items-center items-start w-[80%] h-full">

@@ -59,3 +59,159 @@
 .bg-transparent {
     background-color: transparent;
 }
+
+.bg-semitransparent {
+    background-color: rgba(31, 40, 57, 0.979);
+}
+
+/* Slide-in Animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation Classes */
+.animate-slide-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-right {
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+.animate-slide-down {
+    animation: slideInDown 0.6s ease-out forwards;
+}
+
+.animate-fade {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+/* Stagger animations for items in a list */
+@keyframes slideInLeftStagger {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRightStagger {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Mobile menu animations */
+@keyframes slideDownMenu {
+    from {
+        opacity: 0;
+        max-height: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        max-height: 500px;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUpMenu {
+    from {
+        opacity: 1;
+        max-height: 500px;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        max-height: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.animate-slide-down-menu {
+    animation: slideDownMenu 0.4s ease-out forwards;
+}
+
+.animate-slide-up-menu {
+    animation: slideUpMenu 0.4s ease-out forwards;
+}
+
+/* Staggered item animations */
+.animate-box-1 {
+    animation: slideInLeftStagger 0.6s ease-out 0.1s forwards;
+    opacity: 0;
+}
+
+.animate-box-2 {
+    animation: slideInRightStagger 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+.box-shadow-lg {
+    box-shadow: 0 0 10px -1px rgb(163, 163, 163);
+}
