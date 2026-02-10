@@ -90,7 +90,7 @@ export default function HeroSection() {
         <Contact />
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
 
     </>
   )
