@@ -1,5 +1,4 @@
-import { FaInstagram, FaFacebook, FaTiktok } from 'react-icons/fa'
-import { IoLogoSnapchat } from 'react-icons/io5'
+import { FaInstagram, FaFacebook, FaTiktok, FaWhatsapp } from 'react-icons/fa'
 import Logo from './images/hblogo.png'
 
 export default function Footer() {
@@ -42,8 +41,8 @@ export default function Footer() {
                         <a href="https://facebook.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-700 hover:bg-gray-600 transition flex items-center justify-center">
                             <FaFacebook className="text-lg" />
                         </a>
-                        <a href="https://snapchat.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-700 hover:bg-gray-600 transition flex items-center justify-center">
-                            <IoLogoSnapchat className="text-lg" />
+                        <a href="https://wa.me/+2359153629200" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-700 hover:bg-gray-600 transition flex items-center justify-center">
+                            <FaWhatsapp className="text-lg" />
                         </a>
                         <a href="https://tiktok.com/@vincentukattah" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-700 hover:bg-gray-600 transition flex items-center justify-center">
                             <FaTiktok className="text-lg" />
@@ -61,7 +60,7 @@ export default function Footer() {
             {/* Bottom Section - Copyright */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500">
                 <p>© 2026 HoneyBee. All Rights Reserved.</p>
-                <a href="https://wa.me/+2348100732708" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-white transition">Site designed by CourageXBT</a>
+                <a href="https://wa.me/+2348100732708" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-white transition">Site designed by <strong className="font-bold underline">CourageXBT</strong></a>
             </div>
         </footer>
     )

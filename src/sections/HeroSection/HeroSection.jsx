@@ -59,14 +59,14 @@ export default function HeroSection() {
               <button className="animate-slide-left flex max-sm:w-[90vw] max-sm:w-100 max-sm:h-15 justify-center bg-gray-600 hover:bg-gray-500 text-white font-sm rounded-full px-5 py-1.5 items-center gap-1 transition duration-300 text-lg whitespace-nowrap max-sm:text-[25px] max-sm:mobile-button w-[220px]"
                 style={{ animationDelay: '0.6s' }}>
                 <MdOutlinePlayCircle className="inline mr-1" />
-                <p>Listen Now</p>
+                <a href="https://open.spotify.com/playlist/5oFRicrIy9Y6AvbbuMEXYO?si=mJrwLk9_SpCJCx3BAvnm_A" target="_blank" rel="noreferrer" className="text-white hover:text-white transition">Listen Now</a>
               </button>
               
               {/* Book for Shows button - white border, filled on hover */}
               <button className="animate-slide-right max-sm:w-100 max-sm:w-[90vw] flex bg-transparent border-[1.5px] border-gray-700 border-[1.5] hover:bg-gray-600 text-white font-sm rounded-full px-5 py-1.5  max-sm:text-[23px] justify-center gap-2 items-center max-sm:h-15 transition duration-300 text-lg whitespace-nowrap w-[220px]"
                 style={{ animationDelay: '0.8s' }}>
                 <MdOutlinePlayCircle className="inline mr-1 max-sm:text-[26px]" />
-                <p>Book for Shows</p>
+                <a href="#contact" className="text-white hover:text-white transition">Book for Shows</a>
               </button>
             </div>
           </div>

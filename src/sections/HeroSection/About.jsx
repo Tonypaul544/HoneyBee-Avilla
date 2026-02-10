@@ -14,7 +14,7 @@ export default function About() {
         
         <div ref={contentRef} className={`flex max-sm:flex-col flex-row gap-10 mt-10 px-5 max-sm:px-2 justify-center items-center w-[90%] h-auto m-auto items-center justify-center`}>
 
-          <div className={`flex flex-col gap-15 p-5 rounded-lg w-[50%] h-content max-sm:w-full h-85 items-center justify-center bg-gray-650 box-shadow-white py-3 ${contentInView ? 'animate-box-1' : 'opacity-0'}`}>
+          <div className={`flex flex-col gap-15 p-5 rounded-lg w-[50%] h-100 max-sm:w-full max-sm:h-auto max-sm:py-5 items-center justify-center bg-gray-650 box-shadow-white py-3 ${contentInView ? 'animate-box-1' : 'opacity-0'}`}>
             <p className="flex">HoneyBee Chimaoke Ukattahon Vincent, born on 16th April 1994 in Abia State, Nigeria, is a UK-based Afrobeats singer known for electrifying stage performances and infectious rhythms.</p>
 
             <p className="flex">He began music and stage performance in 2012 while studying at Michael Okpara University of Agriculture, Nigeria. Blending African roots with global influence, HoneyBee's sound is designed to move crowds, connect cultures, and dominate the stage.</p>

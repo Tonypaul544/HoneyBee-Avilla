@@ -44,16 +44,16 @@ export default function Navbar() {
 
           {/* Desktop Menu - Only shows on medium screens and above */}
           <div className="w-content max-sm:w-full  max-sm:h-auto flex max-sm:bg-transparent-blue hidden md:flex items-center gap-5 m-auto align-center justify-center mr-0">
-            <a href="#about" className="text-white hover:text-white transition text-sm font-semibold w-full h-10 max-sm:bg-gray-600">About</a>
-            <a href="#contact" className="text-white hover:text-white transition text-sm font-semibold">Contact</a>
-            <a href="#music" className="text-white hover:text-white transition text-sm font-semibold">Music</a>
-            <a href="#gallery" className="text-white hover:text-white transition text-sm font-semibold">Gallery</a>
+            <a href="#about" className="text-white hover:text-white transition text-sm font-semibold hover:underline">About</a>
+            <a href="#contact" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Contact</a>
+            <a href="#music" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Music</a>
+            <a href="#gallery" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Gallery</a>
 
             {/* Book Now Button - Only shows on medium screens and above */}
             <div className="hidden md:block">
-                <button className="px-4.5 py-1.5 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-full transition duration-300 text-[12px] w-[150px]">
+                <a href="#contact" className="px-4.5 py-1.5 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-full transition duration-300 text-[12px] w-[150px]">
                 Book Now
-                </button>
+                </a>
             </div>
           </div>
 
