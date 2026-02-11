@@ -25,7 +25,7 @@ export default function About() {
               <h1 className="flex text-[#fff] text-xl font-bold  max-sm:text-center  max-sm:w-full">Education</h1>
               <li className="flex">BSc Nursing – Philippines (2021)</li>
               <li className="flex">Diploma in Theology (2014)</li>
-              <li className="flex">Michael Okpara University of Agriculture, Nigeria</li>
+              <li className="flex">Virgen Milagrosa University Foundation, San Carlos City, Pangasinan Philppines</li>
             </ul>
 
             <div className={`flex flex-col gap-2 flex-col border border-gray-700 rounded-lg gap-3 py-5 px-10 box-shadow-blue ${contentInView ? 'animate-box-1' : 'opacity-0'}`}
