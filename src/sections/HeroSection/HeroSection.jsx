@@ -21,7 +21,7 @@ export default function HeroSection() {
 
   return (
     <>
-      <div className="w-full h-[100vh] bg-[#0b1221] text-white overflow-hidden max-sm:h-[100vh] relative flex flex-col max-sm:leading-tight">
+      <div id='herosection' className="w-full h-[100vh] bg-[#0b1221] text-white overflow-hidden max-sm:h-[100vh] relative flex flex-col max-sm:leading-tight">
         {/* Navigation bar at the top */}
         <Navbar />
         

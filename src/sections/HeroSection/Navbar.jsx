@@ -33,22 +33,24 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-full w-full mx-auto m-auto items-center w-100">
           
           {/* Logo Section - Left side of navbar */}
-          <div className="flex items-center gap-2">
+          <a href="#herosection">
+            <div className="flex items-center gap-2">
             {/* Bee emoji icon */}
-            <div className="h-8 w-8 text-2xl font-bold text-white">
-                <img src={Logo} alt="Honeybee Logo" className="logo" />
+              <div className="h-8 w-8 text-2xl font-bold text-white">
+                  <img src={Logo} alt="Honeybee Logo" className="logo" />
+              </div>
+              {/* Brand name */}
+              <span className="text-md font-bold text-white tracking-wide">HONEYBEE</span>
             </div>
-            {/* Brand name */}
-            <span className="text-md font-bold text-white tracking-wide">HONEYBEE</span>
-          </div>
+          </a>
 
           {/* Desktop Menu - Only shows on medium screens and above */}
           <div className="w-[56%] justify-between max-sm:w-full  max-sm:h-auto flex max-sm:bg-transparent-blue hidden md:flex items-center gap-15 m-auto align-center justify-between mr-0">
            <div className="flex gap-5">
              <a href="#about" className="text-white hover:text-white transition text-sm font-semibold hover:underline">About</a>
-              <a href="#contact" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Contact</a>
               <a href="#music" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Music</a>
               <a href="#gallery" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Gallery</a>
+              <a href="#contact" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Contact</a>
            </div>
             {/* Book Now Button - Only shows on medium screens and above */}
             <div className="flex hidden md:block mr-0">
