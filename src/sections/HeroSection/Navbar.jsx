@@ -28,9 +28,9 @@ export default function Navbar() {
 
   return (
     // Navigation bar - stays at top when scrolling
-    <nav ref={navRef} className="min-h-[50px] fixed top-0 left-0 right-0 z-50 items-center justify-center bg-semitransparent-blue backdrop-blur-md border-b border-gray-700/30 top-0 z-50 border-b-2 border-solid-white-600">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fixed h-[100%] w-[100%]">
-        <div className="flex items-center justify-between h-full w-[95%] mx-auto m-auto items-center">
+    <nav ref={navRef} className="min-h-[50px] fixed top-0 left-0 right-0 z-50 items-center justify-between bg-transparent-lue backdrop-blur-md border-b border-gray-700/30 top-0 z-50 border-b-2 border-solid-white-600">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 fixed h-[100%] w-[100%] w-full flex items-center justify-between">
+        <div className="flex items-center justify-between h-full w-full mx-auto m-auto items-center w-100">
           
           {/* Logo Section - Left side of navbar */}
           <div className="flex items-center gap-2">
@@ -43,14 +43,15 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu - Only shows on medium screens and above */}
-          <div className="w-content max-sm:w-full  max-sm:h-auto flex max-sm:bg-transparent-blue hidden md:flex items-center gap-5 m-auto align-center justify-center mr-0">
-            <a href="#about" className="text-white hover:text-white transition text-sm font-semibold hover:underline">About</a>
-            <a href="#contact" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Contact</a>
-            <a href="#music" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Music</a>
-            <a href="#gallery" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Gallery</a>
-
+          <div className="w-[56%] justify-between max-sm:w-full  max-sm:h-auto flex max-sm:bg-transparent-blue hidden md:flex items-center gap-15 m-auto align-center justify-between mr-0">
+           <div className="flex gap-5">
+             <a href="#about" className="text-white hover:text-white transition text-sm font-semibold hover:underline">About</a>
+              <a href="#contact" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Contact</a>
+              <a href="#music" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Music</a>
+              <a href="#gallery" className="text-white hover:text-white transition text-sm font-semibold hover:underline">Gallery</a>
+           </div>
             {/* Book Now Button - Only shows on medium screens and above */}
-            <div className="hidden md:block">
+            <div className="flex hidden md:block mr-0">
                 <a href="#contact" className="px-4.5 py-1.5 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-full transition duration-300 text-[12px] w-[150px]">
                 Book Now
                 </a>
